@@ -1,0 +1,85 @@
+<nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                        <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="active">Dashboard
+                        <img id="logo-header" src="images/logosmall.png" alt="Logo">
+                    </a>
+                </div>
+					
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Dealer-Logistics -->                        
+                        <li class="dropdown home">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu">
+										  <!-- Home Pages -->
+                                <li>
+                                    <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+                                </li>
+                                <!-- End Home Pages -->                              
+										  <!-- Car Pages -->
+                                <li class="dropdown-submenu">
+                                    <a [routerLink]="['/cars']" >Cars</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a [routerLink]="['/cars']" >Cars</a></li>
+                                        <li><a [routerLink]="['/carshistory']" >Cars History</a></li>
+                                    </ul>                                
+                                </li>
+                                <!-- End Car Pages -->                                
+                                <!-- Shuttle Pages -->
+                                <li class="dropdown-submenu">
+                                    <a [routerLink]="['/shuttle']" >Shuttle</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a [routerLink]="['/shuttle']" >Shuttle</a></li>
+                                        <li><a [routerLink]="['/shuttlehistory']" >Shuttle History</a></li>
+                                    </ul>                                
+                                </li>
+                                <!-- End Shuttle Pages -->
+                                <!-- Task Pages -->
+                                <li class="dropdown-submenu">
+                                    <a routerLink="/tasks" routerLinkActive="active">Tasks</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a routerLink="/tasks" routerLinkActive="active">Tasks</a></li>
+                     					<li><a [routerLink]="['/taskshistory']" >Tasks History</a>></li>
+                                    </ul>                                
+                                </li>
+                                <!-- End Task Pages -->
+								<!-- Admin Pages -->
+
+                                <!-- EndAdmin Pages -->                                
+                            </ul>
+                        </li>
+                        <!-- End Dealer-Logistics -->
+                               		
+         		<li>
+        				<a [routerLink]="['/cars']" >Cars
+        				<span class="badge badge-red rounded">5</span></a>
+        			</li>
+        			<li>
+        				<a [routerLink]="['/shuttleP']">Pick-ups
+        				<span class="badge badge-red rounded"> 1</span></a>
+        			</li>
+        			<li>
+        				<a [routerLink]="['/shuttleD']">Drop-offs
+        				<span class="badge badge-red rounded"> 2</span></a>
+        			</li>
+        			<li>
+        				<a routerLink="/tasks" routerLinkActive="active">Tasks
+        				<span class="badge badge-red rounded"> 4</span></a>
+        			</li>
+        			<li>
+        				<a [routerLink]="['/cars']" >Wash
+        				<span class="badge badge-red rounded"> 5</span></a>
+        			</li>
+                    </ul>
+                </div><!--/navbar-collapse-->
+            </div>  
+</nav>
